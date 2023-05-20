@@ -1,0 +1,36 @@
+version: '3.9'
+services:
+  kafka:
+    image: confluentinc/cp-kafka:5.5.3
+    hostname: kafka
+    ports:
+      - 9092:9092
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'false'
+      KAFKA_LOG_RETENTION_HOURS: 24
+      KAFKA_DELETE_RETENTION_MS: 86400000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command:
+      - bash
+      - -c
+      - |
+        echo "auto.create.topics.enable=false" >> /etc/kafka/server.properties
+        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment --partitions 1 --replication-factor 1 --config retention.ms=86400000
+        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment-retry-0 --partitions 1 --replication-factor 1 --config retention.ms=86400000
+        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment-retry-1 --partitions 1 --replication-factor 1 --config retention.ms=86400000
+        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment-dlt --partitions 1 --replication-factor 1 --config retention.ms=432000000
+
+  postgres:
+    image: postgres:13.4
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: odyildiz
+      POSTGRES_PASSWORD: pswrd
+      POSTGRES_DB: shipment
+    volumes:
+      - ./create_shipment_outbox_table.sql:/docker-entrypoint-initdb.d/create_shipment_outbox_table.sql
