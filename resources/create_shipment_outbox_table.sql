@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS outbox.shipment_outbox (
     id integer default nextval('outbox.shipment_outbox_id_seq'::regclass) not null
                                                   constraint shipment_outbox_pkey
                                                   primary key,
-                                                  queue_name text not null,
-                                                  outbox_entity jsonb not null,
-                                                  status outbox.shipment_outbox_state not null
+                                                  topic_name text not null,
+                                                  payload jsonb not null,
+                                                  state outbox.shipment_outbox_state not null
 );

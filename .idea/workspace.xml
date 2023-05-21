@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea722b03-9288-4c0e-bdbf-f29cf266ba66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/src/main/java/org/odyildiz/common/VoidUseCaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/src/main/java/org/odyildiz/common/model/UseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/src/main/java/org/odyildiz/payment/PaymentHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/src/main/java/org/odyildiz/payment/enums/ShipmentOutboxState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/src/main/java/org/odyildiz/payment/model/event/ShipmentEventPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/src/main/java/org/odyildiz/payment/port/PaymentPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-domain/src/main/java/org/odyildiz/payment/usecase/PaymentUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/src/main/java/org/odyildiz/PaymentInfraApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/src/main/java/org/odyildiz/adapter/payment/PaymentAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/src/main/java/org/odyildiz/adapter/payment/rest/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/src/main/java/org/odyildiz/common/entity/ShipmentOutboxEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/src/main/java/org/odyildiz/common/repository/ShipmentOutboxRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/payment-infra/src/test/java/org/odyildiz/PaymentInfraApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/create_shipment_outbox_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/create_shipment_outbox_table.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Q3PyFIBPu3GclHqfyJi7PdVflL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "/Users/prs/Desktop/Projects/shipment-outbox",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.odyildiz.adapter.payment" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.odyildiz.common.model" />
+      <recent name="org.odyildiz.payment.common" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.postgres: Compose Deployment">
+    <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="payment" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.odyildiz.payment.PaymentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentInfraApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="payment-infra" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.odyildiz.PaymentInfraApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentInfraApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="payment-infra" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.odyildiz.paymentinfra.PaymentInfraApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipmentConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shipment-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.odyildiz.shipmentconsumer.ShipmentConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipmentConsumerWorkerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shipment-consumer-worker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.odyildiz.shipmentconsumerworker.ShipmentConsumerWorkerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea722b03-9288-4c0e-bdbf-f29cf266ba66" name="Changes" comment="" />
+      <created>1684579543648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684579543648</updated>
+      <workItem from="1684579544619" duration="10416000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
