@@ -1,28 +1,14 @@
-version: '3.9'
+version: "3.2"
 services:
-  kafka:
-    image: confluentinc/cp-kafka:5.5.3
-    hostname: kafka
-    ports:
-      - 9092:9092
-    environment:
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'false'
-      KAFKA_LOG_RETENTION_HOURS: 24
-      KAFKA_DELETE_RETENTION_MS: 86400000
+  rabbitmq:
+    image: rabbitmq:3.6.5-management
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    command:
-      - bash
-      - -c
-      - |
-        echo "auto.create.topics.enable=false" >> /etc/kafka/server.properties
-        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment --partitions 1 --replication-factor 1 --config retention.ms=86400000
-        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment-retry-0 --partitions 1 --replication-factor 1 --config retention.ms=86400000
-        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment-retry-1 --partitions 1 --replication-factor 1 --config retention.ms=86400000
-        kafka-topics --create --bootstrap-server kafka:9092 --topic shipment-dlt --partitions 1 --replication-factor 1 --config retention.ms=432000000
+      - ./data:/var/lib/rabbitmq:rw
+      - ./definitions.json:/opt/definitions.json:ro
+      - ./rabbitmq.config:/etc/rabbitmq/rabbitmq.config:ro
+    ports:
+      - 5672:5672
+      - 15672:15672
 
   postgres:
     image: postgres:13.4
