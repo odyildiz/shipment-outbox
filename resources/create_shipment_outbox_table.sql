@@ -6,7 +6,7 @@ BEGIN
     IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'shipment_outbox_state') THEN
         CREATE TYPE outbox.shipment_outbox_state AS enum
         (
-            'SUCCESS','FAIL','PENDING'
+            'FAIL','PENDING'
         );
     END IF;
 END$$;

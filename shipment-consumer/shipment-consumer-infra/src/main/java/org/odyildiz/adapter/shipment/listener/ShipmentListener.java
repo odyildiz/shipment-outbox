@@ -10,7 +10,9 @@ import org.springframework.stereotype.Component;
 public class ShipmentListener {
 
     @RabbitListener(queues = "shipment")
-    public void onShipment(ShipmentEventModel shipmentEventModel){
+    public void onShipment(ShipmentEventModel shipmentEventModel) {
+
         shipmentEventModel.toString();
+
     }
 }

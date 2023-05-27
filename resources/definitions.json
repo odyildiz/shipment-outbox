@@ -22,8 +22,6 @@
       "read": ".*"
     }
   ],
-  "parameters": [],
-  "policies": [],
   "queues": [
     {
       "name": "shipment",
@@ -35,7 +33,6 @@
       }
     }
   ],
-  "exchanges": [],
   "bindings": [
     {
       "source": "amq.direct",
