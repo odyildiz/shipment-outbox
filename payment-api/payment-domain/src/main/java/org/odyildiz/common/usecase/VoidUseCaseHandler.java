@@ -1,4 +1,4 @@
-package org.odyildiz.common;
+package org.odyildiz.common.usecase;
 
 import org.odyildiz.common.model.UseCase;
 

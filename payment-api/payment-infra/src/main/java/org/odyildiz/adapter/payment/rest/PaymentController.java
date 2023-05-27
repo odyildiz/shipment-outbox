@@ -1,7 +1,7 @@
 package org.odyildiz.adapter.payment.rest;
 
 import lombok.RequiredArgsConstructor;
-import org.odyildiz.common.VoidUseCaseHandler;
+import org.odyildiz.common.usecase.VoidUseCaseHandler;
 import org.odyildiz.payment.usecase.PaymentUseCase;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +18,8 @@ public class PaymentController {
 
     private final VoidUseCaseHandler<PaymentUseCase> paymentUseCaseVoidUseCaseHandler;
     @GetMapping("/success")
-    public ResponseEntity<String> sendPaymentSuccessEvent(){
-        PaymentUseCase paymentUseCase = new PaymentUseCase(new Random().nextLong(), new Random().nextLong());
+    public ResponseEntity<String> successfulPayment(){
+        PaymentUseCase paymentUseCase = new PaymentUseCase(new Random().nextLong(0, 100000), new Random().nextLong(0, 100000));
         paymentUseCaseVoidUseCaseHandler.handle(paymentUseCase);
 
 

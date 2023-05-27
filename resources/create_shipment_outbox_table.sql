@@ -19,3 +19,5 @@ CREATE TABLE IF NOT EXISTS outbox.shipment_outbox (
                                                   payload jsonb not null,
                                                   state outbox.shipment_outbox_state not null
 );
+
+CREATE CAST (varchar AS outbox.shipment_outbox_state) WITH INOUT AS IMPLICIT;
