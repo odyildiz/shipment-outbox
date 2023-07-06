@@ -1,8 +1,10 @@
 package org.odyildiz.adapter.client;
 
+import org.odyildiz.shipment.usecase.ShipmentUseCase;
+
 public class CourierCompanyClient {
 
-    public static void sendInfoToCourierCompany(){
-        System.out.println("Informations has been send to Courier Company !!!!");
+    public void sendInfoToCourierCompany(ShipmentUseCase shipmentUseCase){
+        System.out.println("Informations for paymentId : " + shipmentUseCase.getPaymentId() + " has been send to Courier Company !!!!");
     }
 }
