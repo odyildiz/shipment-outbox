@@ -5,7 +5,6 @@ import org.odyildiz.common.DomainComponent;
 import org.odyildiz.common.usecase.VoidUseCaseHandler;
 import org.odyildiz.payment.model.entity.ShipmentOutboxModel;
 import org.odyildiz.payment.port.MessageQueuePort;
-import org.odyildiz.payment.port.PaymentPort;
 import org.odyildiz.payment.port.ShipmentOutboxPort;
 import org.odyildiz.payment.usecase.PaymentUseCase;
 

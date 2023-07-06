@@ -1,4 +1,4 @@
-package org.odyildiz.common.entity;
+package org.odyildiz.adapter.payment.common.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

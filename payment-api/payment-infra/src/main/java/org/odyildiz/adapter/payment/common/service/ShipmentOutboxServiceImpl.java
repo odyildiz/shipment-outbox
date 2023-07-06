@@ -1,8 +1,8 @@
-package org.odyildiz.common.service;
+package org.odyildiz.adapter.payment.common.service;
 
 import lombok.RequiredArgsConstructor;
-import org.odyildiz.common.entity.ShipmentOutboxEntity;
-import org.odyildiz.common.repository.ShipmentOutboxRepository;
+import org.odyildiz.adapter.payment.common.entity.ShipmentOutboxEntity;
+import org.odyildiz.adapter.payment.common.repository.ShipmentOutboxRepository;
 import org.odyildiz.payment.enums.ShipmentOutboxState;
 import org.odyildiz.payment.usecase.PaymentUseCase;
 import org.springframework.stereotype.Service;

@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.odyildiz.common.entity.ShipmentOutboxEntity;
 import org.odyildiz.payment.model.entity.ShipmentOutboxModel;
-import org.springframework.amqp.core.Message;
 
 import java.io.Serializable;
 
